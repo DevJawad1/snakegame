@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #37b182;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    width: 92vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+}
+.snake{
+    width: 27px;
+    height: 27px;
+    background-color: #37b182;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+.food{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+}
+button{
+    margin-bottom: 5px;
+    width: 100px;
+    height: 50px;
+    border: none; outline: none;
+}
+.modeBtn button{
+    margin-bottom: 0;
+}
+
+.none{
+    display: none;
+}
+
+@media (max-width:900px) {
+    .none{
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+    }
+    .head{
+        width: 20px;
+        height: 20px;
+    }
+    .snake{
+        width: 17px;
+        height: 17px;
+    }
+}

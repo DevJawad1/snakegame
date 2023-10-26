@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="modeBtn">
+        <button onclick="pause()" id="gameMode">Play</button>
+            <button class="levelBtn" onclick="easy()">Easy</button>
+            <button class="levelBtn" onclick="medium()">Medium</button>
+            <button class="levelBtn" onclick="hard()">Hard</button>
+            <button class="levelBtn" onclick="veryHard()">Very Hard</button>
+        </div>
+        <div id="board">
+            
+        </div>
+        <div class="none">
+            <button onclick="up()" class="up">up</button>
+            <div class="flex">
+                <button onclick="left()">left</button> 
+                <button onclick="right()">right</button> <br>
+                <button onclick="down()" class="down">down</button>
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="js/script.js"></script>
+</html>
